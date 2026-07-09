@@ -7,6 +7,8 @@ import "uEventAnalysisToolAPI/v1/locator/phase.proto";
 import "uEventAnalysisToolAPI/v1/locator/uncertainty.proto";
 import "uEventAnalysisToolAPI/v1/locator/stream_identifier.proto";
 import "uEventAnalysisToolAPI/v1/locator/frame.proto";
+import "uEventAnalysisToolAPI/v1/locator/back_azimuth.proto";
+import "uEventAnalysisToolAPI/v1/locator/incidence_angle.proto";
 
 /**
  * Defines a pick - a high-frequency approxmition that describes the onset of seismic
@@ -34,4 +36,8 @@ message ObservedPick {
    Uncertainty uncertainty = 7;
    /// The reference frame in which the pick was made.  
    Frame frame = 8;
+   /// The back-azimuth.
+   BackAzimuth back_azimuth = 9;
+   /// The incidence angle.
+   IncidenceAngle incidence_angle = 10;
 }
