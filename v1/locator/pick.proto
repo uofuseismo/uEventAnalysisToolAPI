@@ -22,6 +22,8 @@ message Pick {
    Phase phase = 4;
    /// The person or algorithm who made the pick.
    string author = 5;
+   /// If true then the pick's time was determined by some automated method.
+   bool automatic = 6;
    /// The uncertainty bounds on the pick.
-   Uncertainty uncertainty = 6;
+   Uncertainty uncertainty = 7;
 }
