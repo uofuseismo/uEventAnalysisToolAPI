@@ -1,0 +1,15 @@
+edition = "2023";
+
+package uEventAnalysisToolAPI.V1.Login;
+
+import "uEventAnalysisToolAPI/v1/login/mode.proto";
+
+/**
+ * Defines a login request.
+ */
+message Request {
+   /// A request identifier.
+   string identifier [default = ""] = 1;
+   /// Mode
+   Mode mode = 2;
+}
