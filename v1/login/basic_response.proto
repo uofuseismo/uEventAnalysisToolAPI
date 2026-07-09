@@ -5,7 +5,7 @@ package uEventAnalysisToolAPI.V1.Login;
 import "uEventAnalysisToolAPI/v1/login/mode.proto";
 
 /**
- * Defines a response to a request login.
+ * Defines a response to a basic login request.
  */
 message Request {
    /// The identifier corresponding to the input request identifier.
