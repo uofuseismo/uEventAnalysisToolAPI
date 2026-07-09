@@ -2,10 +2,10 @@ edition = "2023";
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/type/latlng.proto";
 
-package uEventAnalysisTool.V1.Catalog;
+package UEventAnalysisTool.V1.Catalog;
 
-import "UEventAnalysisToolAPI/v1/locator/observed_pick.proto";
-import "UEventAnalysisToolAPI/v1/locator/estimate_pick.proto";
+import "uEventAnalysisToolAPI/v1/locator/observed_pick.proto";
+import "uEventAnalysisToolAPI/v1/locator/estimate_pick.proto";
 
 /**
  * Defines an event's origin.  In particular, this is an event's hypocenter.
