@@ -8,19 +8,21 @@ package uEventAnalysisTool.V1.Locator;
 message BackAzimuth {
    /// Defines from where the back-azimuth was computed.
    enum Method {
+      /// The back-azimuth was not computed.
+      METHOD_NOT_COMPUTED = 0,
       /// It is unknown how the back-azimuth was computed.
-      METHOD_UNKNOWN = 0,
+      METHOD_UNKNOWN = 1,
       /// The back-azimuth was computed using geometry.  For example, it could be from
       /// computing the back-azimuth between two points in a WGS84 coordinate system.
       /// This is the more common situation.
-      METHOD_FROM_GEOMETRY = 1,
+      METHOD_FROM_GEOMETRY = 2,
       /// The back-azimuth was estimated from the waveform data.  For example, this could
       /// be done using a polarization analysis techinque - e.g., the SVD of the data
       /// covariance matrix.  Estimating this value from data is usually not done.
-      METHOD_FROM_DATA = 2
+      METHOD_FROM_DATA = 3
    };
    /// The value of the back-azimuth in degeres.
-   double value = 1;
+   double value  [default = 0] = 1;
    /// The method from which the back-azimuth was computed.
-   Method method = 2[default = METHOD_FROM_GEOMETRY];
+   Method method [default = METHOD_NOT_COMPUTED] = 2;
 }
