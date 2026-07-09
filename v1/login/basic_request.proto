@@ -5,9 +5,9 @@ package uEventAnalysisToolAPI.V1.Login;
 import "uEventAnalysisToolAPI/v1/login/mode.proto";
 
 /**
- * Defines a login request.
+ * Defines a basic login request.
  */
-message Request {
+message BasicRequest {
    /// A request identifier.
    string identifier [default = ""] = 1;
    /// The desired application mode.
