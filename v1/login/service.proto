@@ -4,6 +4,13 @@ package UEventAnalysisToolAPI.V1.Login;
 
 import "uEventAnalysisToolAPI/v1/login/basic_request.proto";
 import "uEventAnalysisToolAPI/v1/login/basic_response.proto";
+import "uEventAnalysisToolAPI/v1/login/change_password_request.proto";
+import "uEventAnalysisToolAPI/v1/login/change_password_response.proto";
+import "uEventAnalysisToolAPI/v1/login/list_keys_request.proto";
+import "uEventAnalysisToolAPI/v1/login/list_keys_response.proto";
+import "uEventAnalysisToolAPI/v1/login/remove_key_request.proto";
+import "uEventAnalysisToolAPI/v1/login/remove_key_response.proto";
+
 /**
  * Handles login requests and simple user credentials management.  
  */
