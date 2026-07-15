@@ -5,7 +5,7 @@ package UEventAnalysisToolAPI.V1.Login;
 /**
  * Response to user's request to revoke a key.  
  */
-message RevokeKeyRequest {
+message RevokeKeyResponse {
    // The corresponding request identifier.
    string identifier = 1 [default = ""];
    // The details accompanying the gRPC response code.
