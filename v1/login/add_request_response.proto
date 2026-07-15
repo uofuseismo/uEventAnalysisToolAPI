@@ -1,12 +1,9 @@
 edition = "2023";
 
-import "google/protobuf/duration.proto";
-
 package UEventAnalysisToolAPI.V1.Login;
 
 /**
- * Allows user to add a PUBLIC key.  
- * Note, the user name will be lifted from the user's session token.
+ * Response to the user's request to add their PUBLIC key.  
  */
 message AddKeyRequest {
    // A request identifier.
