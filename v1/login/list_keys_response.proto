@@ -1,0 +1,29 @@
+edition = "2023";
+import "google/protobuf/timestamp.proto";
+
+package UEventAnalysisToolAPI.V1.Login;
+
+/**
+ * Allows user to list their available keys.  
+ * Note, the user name will be lifted from the user's session token.
+ */
+message ListKeys {
+   message Key {
+     // The key name.
+     string name = 1;
+     // The algorithm.
+     string algorithm = 2;
+     // The time (UTC) when the key expires.
+     google.protobuf.Timestamp expires = 4;
+     // The time (UTC) when the key was created.
+     google.protobuf.Timestamp created = 5;
+     // The last time (UTC) the key was used.
+     google.protobuf.Timestamp last_used = 6;
+     // Trud indicates the key is active.
+     bool active = 7;
+   }
+   // The corresponding request identifier.
+   string identifier = 1 [default = ""];
+   // The available keys.
+   repeated Key keys = 2; 
+}
