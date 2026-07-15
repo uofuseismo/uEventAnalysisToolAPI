@@ -4,10 +4,9 @@ import "google/protobuf/timestamp.proto";
 package UEventAnalysisToolAPI.V1.Login;
 
 /**
- * Allows user to list their available keys.  
- * Note, the user name will be lifted from the user's session token.
+ * The user's available keys.
  */
-message ListKeys {
+message ListKeysResponse {
    message Key {
      // The key name.
      string name = 1;
@@ -22,7 +21,7 @@ message ListKeys {
      // Trud indicates the key is active.
      bool active = 7;
    }
-   // The corresponding request identifier.
+   // The request identifier corresponding to the input request.
    string identifier = 1 [default = ""];
    // The available keys.
    repeated Key keys = 2; 
