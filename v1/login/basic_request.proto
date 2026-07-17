@@ -2,8 +2,6 @@ edition = "2023";
 
 package UEventAnalysisToolAPI.V1.Login;
 
-import "uEventAnalysisToolAPI/v1/login/mode.proto";
-
 /**
  * Defines a basic login request.
  */
