@@ -10,8 +10,6 @@ import "uEventAnalysisToolAPI/v1/login/mode.proto";
 message BasicRequest {
    // A request identifier.
    string identifier = 1 [default = ""];
-   // The desired application mode.
-   Mode mode = 2;
    // The frontend version.
-   string version = 3;
+   string version = 2;
 }
