@@ -10,11 +10,9 @@ message LoginWithKeyRequest {
    bytes public_key = 1;
    // A fresh signature made with the public key.
    bytes signature = 2;
-   // The signed message.
-   bytes signed_message = 3;    
-   // The length of the unsigned message. 
-   uint32 signed_message_length = 4;
+   // The user name with the user's public key and correspoding private key.
+   bytes signed_user = 3;    
    // The frontend version.
-   string version = 5;
+   string version = 4;
 }
 
