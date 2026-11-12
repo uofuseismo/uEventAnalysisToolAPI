@@ -1,5 +1,5 @@
 edition = "2023";
-import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
 
 package UEventAnalysisToolAPI.Auth.V1;
 
@@ -18,7 +18,7 @@ message AddKeyRequest {
    string assertion = 3;
    // When the user would like their to expire.  This MAY BE UNDEFINED
    // in which case the key will not expire.
-   google.protobuf.Timestamp expires_after = 4;
+   google.protobuf.Duration expires_after = 4;
    // The key algorithm.
    SignatureAlgorithm algorithm = 5;
 }
